@@ -6,7 +6,10 @@ from db import stores, items
 
 
 app = Flask(__name__)
-# test comment
+# sudo docker build -t flask-smorest-api .
+# sudo docker run -dp 5005:5000 -w /app -v "$(pwd):/app" flask-smorest-api
+# sudo docker container ls
+# sudo docker stop <CONTAINER ID>
 
 @app.get("/item/<string:item_id>")
 def get_item(item_id):
