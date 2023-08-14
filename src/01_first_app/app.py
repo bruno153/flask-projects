@@ -6,7 +6,7 @@ from db import stores, items
 
 
 app = Flask(__name__)
-
+# test comment
 
 @app.get("/item/<string:item_id>")
 def get_item(item_id):
